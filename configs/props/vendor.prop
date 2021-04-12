@@ -44,7 +44,6 @@ persist.vendor.dpmhalservice.enable=1
 persist.vendor.qcomsysd.enabled=1
 ro.af.client_heap_size_kbyte=7168
 ro.crypto.allow_encrypt_override=true
-ro.crypto.volume.filenames_mode=aes-256-cts
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 ro.hardware.egl=adreno
 ro.hardware.keystore_desede=true
@@ -217,3 +216,8 @@ telephony.lteOnCdmaDevice=1
 # Skia
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
+
+# Encryption
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+ro.crypto.volume.filenames_mode=aes-256-cts
