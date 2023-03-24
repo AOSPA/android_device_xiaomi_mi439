@@ -138,16 +138,6 @@ $(WCNSS_DAT_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_BIN_SYMLINK) $(WCNSS_DAT_SYMLINK)
 endif
 
-ifeq ($(filter mi439 mi439_4_19,$(TARGET_DEVICE)),)
-WCNSS_MAC_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/prima/wlan_mac.bin
-$(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "WCNSS MAC bin link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /mnt/vendor/persist/$(notdir $@) $@
-ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_MAC_SYMLINK)
-endif
-
 CNE_LIBS := libvndfwk_detect_jni.qti.so
 CNE_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/app/CneApp/lib/arm64/,$(notdir $(CNE_LIBS)))
 $(CNE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
