@@ -185,9 +185,6 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-ifeq ($(TARGET_KERNEL_VERSION),4.19)
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor_k4.19.prop
-endif
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
@@ -229,8 +226,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-ifeq ($(TARGET_KERNEL_VERSION),4.9)
 include vendor/xiaomi/mi439/BoardConfigVendor.mk
-else ifeq ($(TARGET_KERNEL_VERSION),4.19)
-include vendor/xiaomi/mi439-4.19/BoardConfigVendor.mk
-endif

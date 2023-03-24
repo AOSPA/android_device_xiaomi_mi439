@@ -89,12 +89,6 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
-# Configstore
-ifeq ($(TARGET_KERNEL_VERSION),4.19)
-MITHORIUM_PRODUCT_PACKAGES += \
-    disable_configstore
-endif
-
 # Consumer IR
 MITHORIUM_PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
@@ -322,11 +316,6 @@ MITHORIUM_PRODUCT_PACKAGES += \
 MITHORIUM_PRODUCT_PACKAGES += \
     fstab.qcom
 
-ifeq ($(TARGET_KERNEL_VERSION),4.19)
-MITHORIUM_PRODUCT_PACKAGES += \
-    init.qti.dcvs.sh
-endif
-
 # Remove packages
 MITHORIUM_PRODUCT_PACKAGES += \
     RemovePackages
@@ -357,10 +346,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Thermal
-ifneq ($(TARGET_KERNEL_VERSION),4.19)
 MITHORIUM_PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti.xiaomi_mithorium
-endif
 
 # USB HAL
 MITHORIUM_PRODUCT_PACKAGES += \
@@ -391,11 +378,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += $(MITHORIUM_PRODUCT_PACKAGES)
 
 # Inherit the proprietary files
-ifeq ($(TARGET_KERNEL_VERSION),4.9)
 $(call inherit-product, vendor/xiaomi/mi439/mi439-vendor.mk)
-else ifeq ($(TARGET_KERNEL_VERSION),4.19)
-$(call inherit-product, vendor/xiaomi/mi439-4.19/mi439-vendor.mk)
-endif
 
 # EXTRA: MiuiCamera
 ifneq ($(wildcard vendor/miuicamera/config.mk),)
