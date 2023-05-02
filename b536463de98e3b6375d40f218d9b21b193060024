@@ -34,6 +34,24 @@
       "parentUuid": "fcb28ee0_f3dc1b77",
       "revId": "b536463de98e3b6375d40f218d9b21b193060024",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a5441b3_0ff283d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2023-05-02T14:10:25Z",
+      "side": 1,
+      "message": "you can just keep it empty",
+      "parentUuid": "7bbd195d_3d96b116",
+      "revId": "b536463de98e3b6375d40f218d9b21b193060024",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
