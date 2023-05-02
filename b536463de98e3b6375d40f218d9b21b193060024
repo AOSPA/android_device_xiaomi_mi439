@@ -16,6 +16,24 @@
       "message": "default is true, you can just remove the overlay",
       "revId": "b536463de98e3b6375d40f218d9b21b193060024",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7bbd195d_3d96b116",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000429
+      },
+      "writtenOn": "2023-05-02T13:34:48Z",
+      "side": 1,
+      "message": "yup aware of it but i might need to add more things on this overlay in future so instead of reverting (which removes this whole overlay aswell) i just set it to true.and to keep this overlay",
+      "parentUuid": "fcb28ee0_f3dc1b77",
+      "revId": "b536463de98e3b6375d40f218d9b21b193060024",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
