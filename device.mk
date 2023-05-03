@@ -253,7 +253,8 @@ PRODUCT_PACKAGES += \
     Mi439Haptic \
     XiaomiOlive \
     XiaomiOliveSystemUI \
-    XiaomiPine
+    XiaomiPine \
+    CombinedQSOverlay
 
 # Perf
 PRODUCT_COPY_FILES += \
