@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "62d22acb_fa660a25",
+        "filename": "init/init.mi439.perf.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-05-21T16:29:05Z",
+      "side": 1,
+      "message": "CPUs can\u0027t have different frequencies within a cluster, so only 0 and 4 should be necessary.",
+      "revId": "3a9a6addfab8ae731efbae398ce996157ca0a764",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fba6e6e3_77209684",
+        "filename": "init/init.mi439.perf.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-05-21T16:29:05Z",
+      "side": 1,
+      "message": "this doesn\u0027t make any sense, why set a duration with a 0 boost?",
+      "revId": "3a9a6addfab8ae731efbae398ce996157ca0a764",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
