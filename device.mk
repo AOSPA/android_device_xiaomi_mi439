@@ -109,7 +109,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libgralloc.qti \
     libqdMetaData \
-    libtinyxml \
     memtrack.msm8937 \
     vendor.qti.hardware.display.allocator-service
 
