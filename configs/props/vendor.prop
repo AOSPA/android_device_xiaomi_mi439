@@ -220,3 +220,11 @@ telephony.lteOnCdmaDevice=1
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
+
+# Incremental FS
+ro.incremental.enable=1
+
+# Kernel 4.19 - Encryption
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+ro.crypto.volume.filenames_mode=aes-256-cts

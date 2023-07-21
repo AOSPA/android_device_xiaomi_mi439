@@ -13,7 +13,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # 8937/sdm439 Platform
 TARGET_BOARD_PLATFORM := msm8937
-TARGET_KERNEL_VERSION := 4.9
+TARGET_KERNEL_VERSION := 4.19
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
@@ -83,10 +83,8 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Configstore
-ifeq ($(TARGET_KERNEL_VERSION),4.19)
 PRODUCT_PACKAGES += \
     disable_configstore
-endif
 
 # Consumer IR
 PRODUCT_PACKAGES += \
@@ -173,13 +171,9 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
+    init.qti.dcvs.sh \
     init.qti.qseecomd.sh \
     init.xiaomi.device.sh
-
-ifeq ($(TARGET_KERNEL_VERSION),4.19)
-PRODUCT_PACKAGES += \
-    init.qti.dcvs.sh
-endif
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -333,18 +327,16 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Thermal
-ifneq ($(TARGET_KERNEL_VERSION),4.19)
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.qti.xiaomi_sdm439
-endif
+#PRODUCT_PACKAGES += \
+#    android.hardware.thermal@2.0-service.qti.xiaomi_sdm439
 
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
 # Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.3-service.xiaomi_sdm439
+#PRODUCT_PACKAGES += \
+#    android.hardware.vibrator@1.3-service.xiaomi_sdm439
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -364,11 +356,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Inherit the proprietary files
-ifeq ($(TARGET_KERNEL_VERSION),4.9)
 $(call inherit-product, vendor/xiaomi/mi439/mi439-vendor.mk)
-else ifeq ($(TARGET_KERNEL_VERSION),4.19)
-$(call inherit-product, vendor/xiaomi/mi439-4.19/mi439-vendor.mk)
-endif
 
 # EXTRA: MiuiCamera
 ifneq ($(wildcard vendor/miuicamera/config.mk),)
