@@ -217,3 +217,6 @@ telephony.lteOnCdmaDevice=1
 # Skia
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
+
+# Incremental FS
+ro.incremental.enable=1
