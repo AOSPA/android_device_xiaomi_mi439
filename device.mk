@@ -13,7 +13,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # 8937/sdm439 Platform
 TARGET_BOARD_PLATFORM := msm8937
-TARGET_KERNEL_VERSION := 4.9
+TARGET_KERNEL_VERSION := 4.19
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
