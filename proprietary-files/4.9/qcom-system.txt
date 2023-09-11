@@ -5,6 +5,10 @@
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 
+# CNE
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
+
 # DPM
 system/framework/tcmiface.jar
 
