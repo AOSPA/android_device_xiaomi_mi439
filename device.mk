@@ -316,6 +316,10 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Textclassifier
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*.model,external/libtextclassifier/native/models/,$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier)
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti.xiaomi_sdm439
