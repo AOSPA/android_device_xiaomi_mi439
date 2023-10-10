@@ -92,10 +92,6 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 # GRF/VF
 BOARD_SHIPPING_API_LEVEL := 30
 
-# HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest_k4.9.xml
-
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_sdm439
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_sdm439
@@ -118,6 +114,10 @@ TARGET_KERNEL_CONFIG := sdm439-perf_defconfig
 KERNEL_LLVM_SUPPORT := true
 KERNEL_CUSTOM_LLVM := true
 KERNEL_SD_LLVM_SUPPORT := false
+
+# Manifest
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest_k4.9.xml
 
 # Partitions
 SSI_PARTITIONS := product system system_ext
