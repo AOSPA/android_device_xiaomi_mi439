@@ -117,7 +117,6 @@ KERNEL_SD_LLVM_SUPPORT := false
 
 # Manifest
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest_k4.9.xml
 
 # Partitions
 SSI_PARTITIONS := product system system_ext
