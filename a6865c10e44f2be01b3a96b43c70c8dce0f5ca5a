@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9fdf4bfe_d73caa03",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-10-23T07:00:06Z",
+      "side": 1,
+      "message": "if you put these in the root of device tree, you don\u0027t need any of these lines.",
+      "revId": "a6865c10e44f2be01b3a96b43c70c8dce0f5ca5a",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "01be4a28_44a688a3",
+        "filename": "configs/props/system_ext.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-10-23T07:00:06Z",
+      "side": 1,
+      "message": "why?  I already fixed the priv-app permissions in platform.",
+      "revId": "a6865c10e44f2be01b3a96b43c70c8dce0f5ca5a",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
