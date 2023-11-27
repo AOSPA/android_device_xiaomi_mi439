@@ -133,6 +133,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
 # Health
+TARGET_USE_AIDL_QTI_HEALTH := true
+
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
