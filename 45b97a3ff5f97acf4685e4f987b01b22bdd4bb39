@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40cb50e8_d3f2e081",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-11-29T08:29:39Z",
+      "side": 1,
+      "message": "why do you need to reserve any space if you ship GMS?",
+      "revId": "45b97a3ff5f97acf4685e4f987b01b22bdd4bb39",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
