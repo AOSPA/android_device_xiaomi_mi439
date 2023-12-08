@@ -156,7 +156,7 @@ BOARD_MI439_DYNPART_PARTITION_LIST := $(ALL_PARTITIONS)
 $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_EXTFS_INODE_COUNT := -1))
 $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
-    $(eval BOARD_$(p)IMAGE_EXTFS_INODE_COUNT := 5120))
+    $(eval BOARD_$(p)IMAGE_EXTFS_INODE_COUNT := -1))
 
 $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 104857600)) # 100 MB
