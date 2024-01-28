@@ -116,7 +116,14 @@ BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 KERNEL_DEFCONFIG := vendor/msm8937-perf_defconfig
-KERNEL_FRAGMENT_CONFIG := vendor/mi439.config
+KERNEL_FRAGMENT_CONFIG := \
+   vendor/common.config \
+   vendor/msm-clk.config \
+   vendor/feature/android-12.config \
+   vendor/feature/exfat.config \
+   vendor/feature/lmkd.config \
+   vendor/feature/wireguard.config \
+   vendor/xiaomi/sdm439/mi439.config
 KERNEL_LLVM_SUPPORT := true
 KERNEL_CUSTOM_LLVM := true
 KERNEL_SD_LLVM_SUPPORT := false
