@@ -244,7 +244,8 @@ PRODUCT_PACKAGES += \
     Mi439Haptic \
     XiaomiOlive \
     XiaomiOliveSystemUI \
-    XiaomiPine
+    XiaomiPine \
+    SaveMePlox
 
 # Perf
 PRODUCT_COPY_FILES += \
