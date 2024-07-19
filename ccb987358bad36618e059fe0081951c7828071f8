@@ -16,6 +16,24 @@
       "message": "sf triple buffer is enabled by a prop already, just change it to 1",
       "revId": "ccb987358bad36618e059fe0081951c7828071f8",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49b517d0_c42b58e2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000429
+      },
+      "writtenOn": "2024-07-19T14:53:17Z",
+      "side": 1,
+      "message": "it actually disables it.",
+      "parentUuid": "2b135749_d62c2512",
+      "revId": "ccb987358bad36618e059fe0081951c7828071f8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
