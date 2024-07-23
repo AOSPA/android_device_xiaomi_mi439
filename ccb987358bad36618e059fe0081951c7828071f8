@@ -52,6 +52,24 @@
       "parentUuid": "49b517d0_c42b58e2",
       "revId": "ccb987358bad36618e059fe0081951c7828071f8",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "10fa5768_b727efca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-07-23T07:00:18Z",
+      "side": 1,
+      "message": "PRODUCT_DEFAULT_PROPERTY_OVERRIDES +\u003d ro.surface_flinger.max_frame_buffer_acquired_buffers\u003d3",
+      "parentUuid": "ef3d1a56_a27aaf56",
+      "revId": "ccb987358bad36618e059fe0081951c7828071f8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
