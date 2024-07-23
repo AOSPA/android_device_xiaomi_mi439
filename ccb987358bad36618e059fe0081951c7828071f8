@@ -34,6 +34,24 @@
       "parentUuid": "2b135749_d62c2512",
       "revId": "ccb987358bad36618e059fe0081951c7828071f8",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef3d1a56_a27aaf56",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-07-23T06:59:21Z",
+      "side": 1,
+      "message": "no i mean modify the prop from 3 to 1, it will disable triple buffer",
+      "parentUuid": "49b517d0_c42b58e2",
+      "revId": "ccb987358bad36618e059fe0081951c7828071f8",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
